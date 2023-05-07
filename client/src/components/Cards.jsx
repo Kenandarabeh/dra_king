@@ -7,13 +7,15 @@ const Container = styled.div`
   margin-bottom: 45px;
   cursor: pointer;
 `;
-const Image = styled.img`
-  width: 100%;
-  height:auto;
-  background-color: #999;
-  flex: 1;
-`;
 
+const Image = styled.img`
+    max-width: 100%;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    border: 5px solid #FF8633;
+    border-radius: 40px;
+
+`
 
 const Details = styled.div`
   display: flex;
