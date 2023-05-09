@@ -1,11 +1,15 @@
 import React from 'react'
-import { useRef, useState, useEffect } from 'react'
+import { useRef, useState, useEffect, useContext } from 'react'
 import styled from 'styled-components'
+import AuthContext from '../context/AuthProvider'
+import axios from '../api/axios'
 import '../asset/login.css'
 
-const Login = () => {
-    const errRef = useRef()
+const LOGIN_URL = '/auth'
 
+const Login = () => {
+  const { setAuth} = useContext(AuthContext)
+    const errRef = useRef()
     const [user, setUser]= useState('')
     const [pwd, setPwd]= useState('')
     const [errMsg, setErrMsg]= useState('')
