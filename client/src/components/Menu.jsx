@@ -6,6 +6,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import LogoutIcon from '@mui/icons-material/Logout';
 import { Link } from 'react-router-dom';
+import FolderCopyIcon from '@mui/icons-material/FolderCopy';
 
 const Container =styled.div`
     flex:1;
@@ -59,6 +60,13 @@ const Menu = ({darkMode, setDarkMode}) => {
             <Item>
                 <AccountCircleIcon/>
                 Profile
+            </Item>
+            </Link>
+            <Hr/>
+            <Link to="/Modules/1" style={{textDecoration:"none", color:"inherit"}}>
+            <Item>
+            <FolderCopyIcon/>
+                Modules
             </Item>
             </Link>
             <Hr/>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Cards from '../components/Cards'
 import axios from 'axios'
+import Dropdown from '../Teacher/components/Dropdown'
 
 
 const Container = styled.div`
@@ -35,6 +36,7 @@ const Home = () => {
 
   return (
     <Container>
+      <Dropdown/>
       {users.length > 0 && users.map((user) => (
         <Cards key={user.id} user={user} image={user.image} />
       ))}
